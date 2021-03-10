@@ -14,6 +14,6 @@
 </config-file>
 <config-file parent="/*" target="AndroidManifest.xml"></config-file>
 <lib-file src="src/android/dpuareu.jar"/>
-<source-file src="src/android/IonicFingerPrintReader.java" target-dir="src/com/ionicfinger/" />
+<source-file src="src/IonicFingerPrintReader.java" target-dir="src/com/" />
 </platform>
 </plugin>
