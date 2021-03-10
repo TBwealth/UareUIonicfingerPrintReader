@@ -45,7 +45,7 @@ public class IonicFingerPrintReader extends CordovaPlugin {
            // values = new String[nSize];
             for (int nCount = 0; nCount < nSize; nCount++)
             {
-                values.add(readers.get(nCount).GetDescription().name);
+                values.put(readers.get(nCount).GetDescription().name);
                 //values[nCount] = readers.get(nCount).GetDescription().name;
             }
             callbackContext.success(deviceObject.put("Devices",values));
@@ -56,7 +56,7 @@ public class IonicFingerPrintReader extends CordovaPlugin {
            // String[] values = null;  
            // values = new String[1];   
             //values[0] = readers.get(0).GetDescription().name;  
-            values.add(readers.get(0).GetDescription().name);
+            values.put(readers.get(0).GetDescription().name);
             callbackContext.success(deviceObject.put("Devices",values));
         }
         } catch (UareUException e) {
