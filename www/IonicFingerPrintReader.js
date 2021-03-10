@@ -5,6 +5,6 @@ var exec = require('cordova/exec');
 // };
 
 exports.getReader = function (success, error) {
-
-    exec(success, error, 'FingerPrintReader', 'getReader');
+var args = {}
+    exec(success, error, 'FingerPrintReader', 'getReader', [args]);
 };
