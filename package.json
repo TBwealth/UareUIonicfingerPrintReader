@@ -1,0 +1,25 @@
+{
+  "name": "com.ionicfinger.ionicfingerprintreader",
+  "version": "1.0.0",
+  "description": "native plugin for uareu fingerprint reader in ionic application",
+  "cordova": {
+    "id": "com.ionicfinger.ionicfingerprintreader",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TBwealth/UareUIonicfingerPrintReader.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Temitope Badmus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TBwealth/UareUIonicfingerPrintReader/issues"
+  },
+  "homepage": "https://github.com/TBwealth/UareUIonicfingerPrintReader#readme"
+}
