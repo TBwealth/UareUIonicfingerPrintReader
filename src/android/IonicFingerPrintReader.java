@@ -27,7 +27,7 @@ public class IonicFingerPrintReader extends CordovaPlugin {
 
         return false;
     }
-    private void getReader(CallbackContext callback) throws JSONException {
+    private void getReader(CallbackContext callbackContext) throws JSONException {
         // initiliaze dp sdk
         try
         {
@@ -39,25 +39,24 @@ public class IonicFingerPrintReader extends CordovaPlugin {
         int nSize = readers.size();
         if (nSize > 1)
         {
-            final ArrayList<String> names = new ArrayList<>();
             String[] values = null;
             values = new String[nSize];
             for (int nCount = 0; nCount < nSize; nCount++)
             {
                 values[nCount] = readers.get(nCount).GetDescription().name;
             }
-            callback.success(values);
+            callbackContext.success(values);
         
         }
         else
         { 
             String[] values = null;  
             values = new String[1];   
-            values[0] = readers.get(nCount).GetDescription().name;  
-            callback.success(values);
+            values[0] = readers.get(0).GetDescription().name;  
+            callbackContext.success(values);
         }
         } catch (UareUException e) {
-            callback.error("Oops! Something went wrong");
+            callbackContext.error("Oops! Something went wrong");
         }
     
         
