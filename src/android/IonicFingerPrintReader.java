@@ -40,11 +40,11 @@ public class IonicFingerPrintReader extends CordovaPlugin {
         int nSize = readers.size();
         JSONArray values = new JSONArray();
         JSONObject deviceObject = new JSONObject();
-        // Toast.makeText(
-        //     webView.getContext(), 
-        //     "Hello World Cordova Plugin",
-        //     Toast.LENGTH_SHORT)
-        //     .show(); 
+        Toast.makeText(
+            webView.getContext(), 
+            "Hello World Cordova Plugin",
+            Toast.LENGTH_SHORT)
+            .show(); 
         if (nSize > 1)
         {
             //String[] values = null;
