@@ -13,6 +13,7 @@
 </feature>
 </config-file>
 <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-<source-file src="src/android/IonicFingerPrintReader.java" target-dir="src/com/ionicfinger/ionicfingerprintreader/" />
+<lib-file src="src/android/dpuareu.jar"/>
+<source-file src="src/android/IonicFingerPrintReader.so" target-dir="src/com/ionicfinger/ionicfingerprintreader/" />
 </platform>
 </plugin>
