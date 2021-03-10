@@ -4,7 +4,7 @@ var exec = require('cordova/exec');
 //     exec(success, error, 'IonicFingerPrintReader', 'coolMethod', [arg0]);
 // };
 
-exports.getReader = function (success, error) {
-var args = {}
+exports.getReader = function (args,success, error) {
+//var args = {}
     exec(success, error, 'FingerPrintReader', 'getReader', [args]);
 };
