@@ -59,7 +59,13 @@ public class IonicFingerPrintReader extends CordovaPlugin {
         { 
             values.put(readers.get(0).GetDescription().name);
         }
-        callbackContext.success(deviceObject.put("Devices",values));       
+        Toast.makeText(
+            webView.getContext(), 
+            "Reader size is " + nSize,
+            Toast.LENGTH_SHORT)
+            .show();
+            deviceObject.put("Devices",values); 
+        callbackContext.success(deviceObject);       
         
         }
 
