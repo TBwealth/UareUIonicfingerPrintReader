@@ -1,9 +1,9 @@
 {
-  "name": "com.ionicfinger.ionicfingerprintreader",
+  "name": "com-ionicfinger-ionicfingerprintreader",
   "version": "1.0.0",
   "description": "native plugin for uareu fingerprint reader in ionic application",
   "cordova": {
-    "id": "com.ionicfinger.ionicfingerprintreader",
+    "id": "com-ionicfinger-ionicfingerprintreader",
     "platforms": [
       "android"
     ]
