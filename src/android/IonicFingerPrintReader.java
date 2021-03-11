@@ -30,13 +30,6 @@ public class IonicFingerPrintReader extends CordovaPlugin {
     }
     private void getReader(CallbackContext callbackContext) throws JSONException {
         // initiliaze dp sdk
-        try
-        {
-            Context applContext = this.cordova.getActivity().getApplicationContext();
-            readers = UareUGlobal.GetReaderCollection(applContext);
-            readers.GetReaders();
-    
-            
         int nSize = readers.size();
         JSONArray values = new JSONArray();
         JSONObject deviceObject = new JSONObject();
@@ -45,6 +38,12 @@ public class IonicFingerPrintReader extends CordovaPlugin {
             "Hello World Cordova Plugin",
             Toast.LENGTH_SHORT)
             .show(); 
+        try
+        {
+            Context applContext = this.cordova.getActivity().getApplicationContext();
+            readers = UareUGlobal.GetReaderCollection(applContext);
+            readers.GetReaders();         
+  
         if (nSize > 1)
         {
             //String[] values = null;
